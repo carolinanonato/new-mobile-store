@@ -1,15 +1,28 @@
 header {
     background-color: #e24647;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
-h1,
-a{
-    color: #fff;
-}
 
 h1{
     font-size: 40px;
+    font-family: Arial, 'Roboto', sans-serif;
 }
-a { 
+
+nav {
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
    
-    text-decoration: none;
+}
+
+
+a { 
+   text-decoration: none;
+   font-size: inherit;
+   color: inherit;
+}
