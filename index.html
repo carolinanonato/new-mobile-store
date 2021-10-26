@@ -4,28 +4,50 @@
     <head>
         <meta charset="utf-8"/>
         <title>Mobile Store</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/container-store.css">
         <link rel="stylesheet" href="css/header-store.css">
+        <link rel="stylesheet" href="css/wrap-product.css">
+        <link rel="stylesheet" href="css/photo-product.css">
+        <link rel="stylesheet" href="css/description-product.css">
         <link rel="stylesheet" href="css/button-store.css">
-        
-        
-        
+             
     </head>
 
     <body>
         <div class="container-store">
         <header class="header-store">
-            <h1 class="title">LOGO</h1> 
+            <h1 class="title">Logo</h1> 
             
             <nav class="navigation">
                 <a class="action" href="">Products</a>
                 <a class="action"> Services</a>
-                <a class="action last">Shopping Cart (10)</a> 
+                <a class="action -last">Shopping Cart (10)</a> 
             </nav>
         </header>
-        <a class="button-store" href="buy.html">Add to Cart</a>
-            <a class="button-store" href="buy.html">Buy Now</a>
+
+        <figure class="photo-product"><img src="/img/fone.png" alt="headphone"></figure>
+
+<section class="wrap-product">
+        <dl class="description-product">
+            <dt class="title">Cute and expensive headphone</dt>   
+            <dd class="item">4.0 (197)</dd>
+            <dd class="item -info"><strong class="contrast">Shipping:</strong> $108</dd>
+            <dd class="item -info -last"><strong class="contrast">Price:</strong> $340</dd>
+            <dd class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit placeat molestiae optio explicabo ex. Iste quidem hic dolor placeat, odit, sed nesciunt quis enim repellat, mollitia cum unde assumenda voluptates.</dd>
+            <dd class="text -more"> <a href="" class="action">More...</a></dd>
+           
+        </dl>
+        <button class="button-store -second">Add to Cart </button>
+        <a class="button-store" href="buy.html">Buy Now</a>
+    </section>
         </div>
     </body>
 </html>
