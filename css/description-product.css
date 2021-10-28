@@ -1,51 +1,51 @@
-
 .description-product {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
-    display: inline-block;
-    width: 554px;
-   
-    }
-
-.description-product > .title {
+  }
+  
+  .description-product > .title {
     font-size: 25px;
-    margin-bottom: 100px;
-}
-
-.description-product > .item {
+    margin-bottom: 50px;
+  }
+  
+  .description-product > .item {
     font-size: 20px;
     margin-bottom: 28px;
-   
-}
-
-.description-product > .item.-info {
+  }
+  
+  .description-product > .item.-star {
+    margin-bottom: 10px;
+  }
+  
+  .description-product > .item.-star + .item {
+    margin-left: 7px;
+  }
+  
+  .description-product > .item.-info {
     width: 200px;
     text-align: right;
-}
-
-.description-product > .item.-last {
+  }
+  
+  .description-product > .item.-last {
     margin-bottom: 72px;
-
-}
-
-.description-product .contrast {
+  }
+  
+  .description-product .contrast {
     text-transform: uppercase;
     float: left;
-}
-
-
-.description-product > .text {
+  }
+  
+  .description-product > .text {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
-
-}
-
-.description-product > .text.-more {
-    margin-bottom: 98px;
-}
-
-.description-product .action {
+  }
+  
+  .description-product > .text.-more {
+    margin-bottom: 0;
+  }
+  
+  .description-product .action {
     color: inherit;
     text-decoration: none;
-}
+  }
