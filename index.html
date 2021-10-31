@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes"
+  />
     <title>Mobile Store</title>
 
     <link
@@ -17,6 +21,8 @@
     <link rel="stylesheet" href="css/wrap-product.css" />
     <link rel="stylesheet" href="css/description-product.css" />
     <link rel="stylesheet" href="css/button-store.css" />
+
+    
   </head>
 
   <body>
@@ -26,29 +32,33 @@
 
         <nav class="navigation">
           <input type="search" placeholder="Search" />
-          <a class="action" href="http://collabcode.training">Products</a>
-          <a class="action" href="http://collabcode.training">Services</a>
-          <a class="action -last" href="http://collabcode.training"
+          <a class="action" href="">Products </a>
+          <a class="action" href="">Services </a>
+          <a class="action -last" href=""
             >Cart (10)</a
           >
         </nav>
       </header>
 
       <figure class="photo-product">
-        <img src="img/fone.png" alt="Fone de ouvido" />
+        <img class="photo" src="img/fone.png" alt="Headphone" />
       </figure>
 
       <section class="wrap-product">
         <dl class="description-product">
-          <dt class="title">Cute, expensive and good headphone</dt>
+          <dt class="title">Cute and expensive headphone</dt>
+
+
+          <dd class="item -heart">
+        <img class="icon" src="img/heart.png" alt="heart"></dd>
           <dd class="item -star">
-            <img src="img/blackstar.png" alt="Estrela" />
-            <img src="img/blackstar.png" alt="Estrela" />
-            <img src="img/blackstar.png" alt="Estrela" />
-            <img src="img/blackstar.png" alt="Estrela" />
-            <img src="img/redstar.png" alt="Estrela" />
+            <img class="icon" src="img/blackstar.png" alt="Star" />
+            <img class="icon" src="img/blackstar.png" alt="Star" />
+            <img class="icon" src="img/blackstar.png" alt="Star" />
+            <img class="icon" src="img/blackstar.png" alt="Star" />
+            <img class="icon" src="img/redstar.png" alt="Star" />
           </dd>
-          <dd class="item">4.0 (97)</dd>
+          <dd class="item -number">4.0 (97)</dd>
           <dd class="item -info">
             <strong class="contrast">Shipping</strong> C$ 108
           </dd>
@@ -67,10 +77,11 @@
 
         <div class="buttons">
           <button class="button-store -second">Add to Cart</button>
-
-          <a class="button-store" href="comprar.html">Buy Now</a>
+          <a class="button-store" href="buy.html">Buy Now</a>
         </div>
       </section>
     </div>
+    <script src="js/description-products.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

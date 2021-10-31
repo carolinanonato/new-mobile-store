@@ -1,51 +1,109 @@
 .description-product {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-  }
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.description-product > .title {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.description-product > .item {
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.description-product > .item.-heart {
+  position: absolute;
+  transform: translateX(-100%);
+  top: 8px;
+  left: -47px;
+  cursor: pointer;
+}
+
+.description-product > .item.-active {
+  background-color: #fff;
+}
+
+.description-product > .item.-star {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.description-product .icon {
+  transition: transform 100ms linear;
+}
+
+.description-product .icon:hover {
+  transform: scale(1.2);
+}
+
+.description-product > .item.-star + .item {
+  margin-left: 7px;
+}
+
+.description-product > .item.-info {
+  width: 200px;
+  text-align: right;
+}
+
+.description-product > .item.-last {
+  margin-bottom: 72px;
+}
+
+.description-product .contrast {
+  text-transform: uppercase;
+  float: left;
+}
+
+.description-product > .text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.description-product > .text.-more {
+  margin-bottom: 0;
+}
+
+.description-product .action {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1310px)  {
+  .description-product {
+    width: 50%;
+    min-width: 655px;
+    margin: 0 auto 60px;
   
+
+  }
+
+
+@media (max-width: 1310px)  {
   .description-product > .title {
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center; 
+
   }
-  
-  .description-product > .item {
-    font-size: 20px;
-    margin-bottom: 28px;
-  }
-  
+
   .description-product > .item.-star {
-    margin-bottom: 10px;
-  }
-  
-  .description-product > .item.-star + .item {
-    margin-left: 7px;
-  }
-  
-  .description-product > .item.-info {
-    width: 200px;
-    text-align: right;
-  }
-  
-  .description-product > .item.-last {
-    margin-bottom: 72px;
-  }
-  
-  .description-product .contrast {
-    text-transform: uppercase;
     float: left;
+    margin-right: 10px;
   }
+
+  .description-product > .item.-number {
+    padding-top: 4px;
+  }
+}
+
+@media (max-width: 720px) {
+  .description-product {
+    width: 90%;
+    min-width: auto;
+  }
+
+
   
-  .description-product > .text {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .description-product > .text.-more {
-    margin-bottom: 0;
-  }
-  
-  .description-product .action {
-    color: inherit;
-    text-decoration: none;
-  }
+}

@@ -12,6 +12,19 @@
     text-align: center;
     text-decoration: none;
     border: none;
+    cursor: pointer;
+    
+    transition: all 300ms linear;
+  }
+
+  .button-store:hover,
+  .button-store:focus {
+    background-color: #fff;
+    color: #e24647;
+  }
+
+  .button-store:active {
+    transform: scale(0.9);
   }
   
   .button-store.-second {
@@ -20,6 +33,12 @@
     width: 218px;
     line-height: 56px;
     margin-right: 38px;
+  }
+
+  .button-store.-second:hover,
+  .button-store.-second:focus{
+    background-color: #fff;
+    color:#e24647;
   }
   
   .button-store > button,
@@ -30,3 +49,24 @@
     color: inherit;
     text-decoration: inherit;
   }
+
+ @media (max-width: 500px) {
+   .button-store.-second {
+     margin-right: 20px;
+   }
+ }
+
+ @media (max-width: 470px) {
+   .button-store,
+   .button-store.-second {
+     display: block;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .button-store.-second {
+     margin-bottom: 20px;
+     
+   }
+ }

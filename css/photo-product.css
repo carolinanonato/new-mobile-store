@@ -1,9 +1,34 @@
 .photo-product {
-    background-color: #fff;
-    display: inline-block;
-    height: 554px;
-    vertical-align: middle;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    margin-right: 157px;
+  background-color: #fff;
+  display: inline-block;
+  height: 554px;
+  vertical-align: middle;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  margin-right: 157px;
+}
+
+@media (max-width: 1325px) {
+  .photo-product {
+    margin-right: 140px;;
+    text-align: center;
   }
+}
+
+@media (max-width: 1310px) {
+  .photo-product {
+   display: block;
+   margin-right: 0;
+   border-radius: 0;
+   margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .photo-product {
+    height: auto;
+  }
+  .photo-product > .photo {
+    width: 100%;
+  }
+}
