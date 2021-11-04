@@ -21,11 +21,6 @@
   cursor: pointer;
 }
 
-
-.description-product > .item.-active {
-  background-color: #fff;
-}
-
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
@@ -116,6 +111,11 @@
 
   }
 
+  .description-product > .item.-heart {
+    left: auto;
+    transform: none;
+
+  }
   .description-product > .item.-star {
     float: left;
     margin-right: 10px;
@@ -132,4 +132,10 @@
     min-width: auto;
   }  
 }
+}
+
+@media (max-width: 475px) {
+  .description-product > .item.-heart {
+    position: static;
+  }
 }

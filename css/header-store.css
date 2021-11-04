@@ -23,7 +23,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
-  color: inherit;
+  color: #fff;
   font-family: Arial, "Roboto", sans-serif;
   font-size: 20px;
   padding: 8px;
@@ -97,7 +97,23 @@
     padding-right: 30px;
   }
   .header-store [type="search"] {
-    display: none;
+    position: absolute;
+    transform: translateX(-88%);
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+
+    transition: transform 200ms linear;
+  }
+
+  .header-store .-active[type="search"] {
+  transform: translateX(0);
+  transition: transform 600ms cubic-bezier(0, 0, 0.96, 1.26);
+}
+
+  .header-store [type="search"]::placeholder {
+    color: #000;
   }
 }
 

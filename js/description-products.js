@@ -1,14 +1,48 @@
-const $heart = document.querySelector('.-heart');
-const $stars = document.querySelectorAll('.star');
-let indez = 0;
+const $heart = document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".star");
+const positionLast = $stars.length - 1;
 
-$heart.addEventListener('click', handleClick);
-
-$stars.forEach(function($star) {
-    $star.addEventListener('click', handleClick);
-});
+$heart.addEventListener("click", handleClick);
 
 function handleClick() {
-this.classList.toggle("-active");
+  this.classList.toggle("-active");
 }
 
+$stars.forEach(function($star, key) {
+  if (key == 0) {
+    $star.addEventListener("click", firstStar);
+  }
+
+  if (key == positionLast) {
+    $star.addEventListener("click", lastStar);
+  }
+
+  if (key > 0 && key < positionLast) {
+    $star.addEventListener("click", function() {
+      middleStar(key);
+    });
+  }
+});
+
+function firstStar() {
+  $stars.forEach(function($star) {
+    $star.classList.remove("-active");
+  });
+  this.classList.add("-active");
+}
+
+function lastStar() {
+  $stars.forEach(function($star) {
+    $star.classList.add("-active");
+  });
+}
+
+function middleStar(index) {
+  $stars.forEach(function($star, key) {
+    $star.classList.remove("-active");
+
+    if (key <= index) {
+      $star.classList.add("-active");
+    }
+  });
+}
