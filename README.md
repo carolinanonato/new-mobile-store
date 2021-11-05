@@ -1,5 +1,7 @@
 # Eletronics Store
 
-Although the repository is called new-mobile-store, I decided to use a headphone image, so I guess it's a eletronics store now.
+Here's the final project. The website is fully responsive and there's a few touches with JavaScript (stars, heart and the mobile menu/search bar). 
+ 
+ Thank you Marco Bruno for the amazing mentorship.
 
 ![Home Image](./img/wip-eletronics-store.png)
