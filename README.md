@@ -4,4 +4,4 @@ Here's the final project. The website is fully responsive and there's a few touc
  
  Thank you Marco Bruno for the amazing mentorship.
 
-![Home Image](./img/wip-eletronics-store.png)
+![Home Image](./img/headphone-page.png)
