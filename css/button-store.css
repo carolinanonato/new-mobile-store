@@ -1,72 +1,76 @@
 .button-store {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: #252c41;
-    font-size: 20px;
-    color: #fff;
-    font-family: Arial, "Roboto", sans-serif;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    margin-right: 0;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    
-    transition: all 300ms linear;
-  }
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #252c41;
+  font-size: 20px;
+  color: #fff;
+  font-family: Arial, "Roboto", sans-serif;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 
-  .button-store:hover,
-  .button-store:focus {
-    background-color: #fff;
-    color: #e24647;
-  }
+  transition: all 300ms linear;
+}
 
-  .button-store:active {
-    transform: scale(0.9);
-  }
-  
+.button-store:hover,
+.button-store:focus {
+  background-color: #fff;
+  color: #e24647;
+}
+
+.button-store:active {
+  transform: scale(0.9);
+}
+
+.button-store.-second {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 218px;
+  line-height: 56px;
+}
+
+.button-store.-second:hover,
+.button-store.-second:focus {
+  background-color: #fff;
+  color: #e24647;
+}
+
+.button-store > button,
+.button-store > a {
+  font-size: inherit;
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+@media (max-width: 1310px) {
   .button-store.-second {
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: 218px;
-    line-height: 56px;
     margin-right: 38px;
   }
+}
 
-  .button-store.-second:hover,
-  .button-store.-second:focus{
-    background-color: #fff;
-    color:#e24647;
+@media (max-width: 500px) {
+  .button-store.-second {
+    margin-right: 20px;
   }
-  
-  .button-store > button,
-  .button-store > a {
-    font-size: inherit;
-    background-color: inherit;
-    border: none;
-    color: inherit;
-    text-decoration: inherit;
+}
+
+@media (max-width: 470px) {
+  .button-store,
+  .button-store.-second {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
- @media (max-width: 500px) {
-   .button-store.-second {
-     margin-right: 20px;
-   }
- }
-
- @media (max-width: 470px) {
-   .button-store,
-   .button-store.-second {
-     display: block;
-     width: 90%;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
-   .button-store.-second {
-     margin-bottom: 20px;
-     
-   }
- }
+  .button-store.-second {
+    margin-bottom: 20px;
+  }
+}

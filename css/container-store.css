@@ -8,8 +8,8 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 39px 0 rgba(50, 50, 50, 0.36);
 }
-
 
 @media (max-width: 1470px), (max-height: 952px) {
   .container-store {
@@ -31,5 +31,11 @@
     max-width: 1330px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 355px) {
+  .container-store {
+    overflow-x: hidden;
   }
 }

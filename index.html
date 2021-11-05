@@ -6,7 +6,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=yes"
   />
-    <title>Mobile Store</title>
+    <title>Eletronics Store</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/container-store.css" />
     <link rel="stylesheet" href="css/header-store.css" />
+    <link rel="stylesheet" href="css/input-search.css" />
     <link rel="stylesheet" href="css/photo-product.css" />
     <link rel="stylesheet" href="css/wrap-product.css" />
     <link rel="stylesheet" href="css/description-product.css" />
     <link rel="stylesheet" href="css/button-store.css" />
-
-    
+        
   </head>
 
   <body>
@@ -31,14 +31,31 @@
         <h1 class="title">Logo</h1>
 
         <nav class="navigation">
-          <input class="-active" type="search" placeholder="Search" />
-          <a class="action" href="">Products </a>
-          <a class="action" href="">Services </a>
-          <a class="action -last" href=""
-            >Cart (10)</a
-          >
-        </nav>
-      </header>
+          <form class="input-search">
+            <input class="content" type="search" placeholder="Search" /><!--
+            --><input
+              type="image"
+              class="icon -open -active"
+              src="img/search.png"
+            /><!--
+            --><input type="image" class="icon -close" src="img/close.png" />
+            
+            <ul id="menu" class="list">
+              <li class="item -menu"><a href="#menu" class="menu">Menu</a></li>
+              <li class="item">
+                <a class="action" href="#">Products</a>
+              </li>
+              <li class="item">
+                <a class="action" href="#">Services</a>
+              </li>
+              <li class="item -last">
+                <a class="action" href="#"
+                  >Cart (10)</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
 
       <figure class="photo-product">
         <img class="photo" src="img/fone.png" alt="Headphone" />
@@ -102,7 +119,9 @@
         </div>
       </section>
     </div>
+    
     <script src="js/header-store.js"></script>
+    <script src="js/input-search.js"></script>
     <script src="js/description-products.js"></script>
     <script src="js/home.js"></script>
   </body>
